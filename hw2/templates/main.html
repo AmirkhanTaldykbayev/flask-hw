@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block title %} {{ title }} {% endblock %} {% block
+content %}
+<h1>Добро пожаловать на сайт, {{ name }}!</h1>
+{% if email %}
+<h3>Ваш адрес электоронной почты: {{ email }}</h3>
+{% endif %}
+
+<p>Для выхода нажмите кнопку ниже</p>
+<form method="post">
+  <button type="submit">Удалить мои данные и выйти</button>
+</form>
+
+{% endblock %}
